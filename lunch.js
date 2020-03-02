@@ -14,6 +14,19 @@
  */
 
 const whatToDoForLunch = function(hungry, availableTime) {
+  
+  if(hungry === true && availableTime <= 20) {
+    return console.log ("pick up something and eat in the lab")
+  }
+  else if (hungry === true && availableTime > 20 && availableTime <= 30) {
+    return console.log("go to Subway")
+  }
+  else if (hungry === true && availableTime > 30) {
+    return console.log("whatch your time")
+  }
+  else {
+    return console.log("go back to work")
+  }
   console.log("I don't know what to do!");
 }
 
