@@ -10,7 +10,7 @@ const output = (commandLineInput) => {
 
   let output = "";
   for (let j = 2; j < commandLineInput.length; j++) {
-    output += reverse(process.argv[j]) + " ";
+    output += reverse(commandLineInput[j]) + " ";
   }
   return output;
 };
